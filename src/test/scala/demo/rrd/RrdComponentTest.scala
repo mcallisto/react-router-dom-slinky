@@ -9,12 +9,12 @@ import vision.id.rrd.facade.reactRouterDom.components._
 class RrdComponentTest extends AnyFunSuite {
   test("Can render a BrowserRouter component") {
     val container = document.createElement("div")
-    val aBrowserRouter = BrowserRouter("A tag")
     val aRoute = Route(RouteProps().setPath(""))
+    val aBrowserRouter = BrowserRouter("Something", aRoute)
 
     ReactDOM.render(aBrowserRouter, container)
 
-    assert(container.innerHTML.contains("A tag") === true)
+    assert(container.innerHTML.contains("Something") === true)
   }
 
 }
