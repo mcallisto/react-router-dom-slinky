@@ -3,7 +3,7 @@ enablePlugins(ScalablyTypedConverterGenSourcePlugin)
 
 scalaVersion := "2.13.2"
 name := "react-router-dom-slinky"
-version := "0.1.4"
+version := "0.1.5"
 
 /* javascript / typescript deps */
 Compile / npmDependencies ++= Seq(
@@ -32,7 +32,7 @@ useYarn := true
 stFlavour := Flavour.Slinky
 
 // focus only on these libraries
-stMinimize := Selection.AllExcept("react-router-dom", "history")
+stMinimize := Selection.AllExcept("react-router-dom", "react-router", "history")
 
 // shade into another package
 stOutputPackage := "vision.id.rrd.facade"
