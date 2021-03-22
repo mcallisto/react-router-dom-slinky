@@ -37,7 +37,7 @@ stMinimize := Selection.AllExcept("react-router-dom", "react-router", "history")
 // shade into another package
 stOutputPackage := "vision.id.rrd.facade"
 
-ThisBuild / organization := "vision.id.react-router-dom-slinky"
+ThisBuild / organization := "vision.id"
 ThisBuild / organizationName := "vision.id"
 ThisBuild / organizationHomepage := Some(url("http://id.vision/"))
 
@@ -68,22 +68,3 @@ ThisBuild / publishTo := {
   else Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
 ThisBuild / publishMavenStyle := true
-
-//publishMavenStyle := true
-//homepage := Some(new URL("https://github.com/mcallisto/react-router-dom-slinky"))
-//startYear := Some(2020)
-//pomExtra := (
-//  <scm>
-//    <connection>scm:git:github.com:/mcallisto/react-router-dom-slinky</connection>
-//    <developerConnection>scm:git:git@github.com:mcallisto/react-router-dom-slinky.git</developerConnection>
-//    <url>github.com:mcallisto/react-router-dom-slinky.git</url>
-//  </scm>
-//    <developers>
-//      <developer>
-//        <id>mcallisto</id>
-//        <name>Mario Càllisto</name>
-//      </developer>
-//    </developers>
-//  )
-//licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-//bintrayRepository := "libs"
